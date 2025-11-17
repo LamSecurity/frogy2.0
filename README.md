@@ -90,9 +90,14 @@ If you want runs to survive container restarts, add `-v "$(pwd)/output:/opt/frog
 
 Docker Desktop does **not** support `--network host`. Use bridged networking with an explicit port mapping instead:
 
+
+### Apos instalar a imagem,  rodar o seguinte comando para subir a página
+
 ```bash
 docker run --rm --privileged --cap-add=NET_RAW -p 8787:8787 frogy:latest
 ```
+
+Abrir 'http://localhost:8787'
 
 Add `-v "$(pwd)/output:/opt/frogy/output"` if you want to persist run history to the host filesystem.
 
