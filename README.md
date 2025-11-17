@@ -99,6 +99,9 @@ docker run --rm --privileged --cap-add=NET_RAW -p 8787:8787 frogy:latest
 
 Abrir 'http://localhost:8787'
 
+<img width="641" height="407" alt="image" src="https://github.com/user-attachments/assets/7bb2040f-c03a-4e4e-baf9-207e5a1ecd53" />
+
+
 Add `-v "$(pwd)/output:/opt/frogy/output"` if you want to persist run history to the host filesystem.
 
 When the container starts you will see a banner similar to:
